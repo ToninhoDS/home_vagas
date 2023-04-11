@@ -9,12 +9,31 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CadastroLogin.css">
-    <link rel="stylesheet" href="css/CadastroLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/ca.css">
+    <link rel="stylesheet" href="css/a.css">
+    
+    
     <title>Home</title>
 </head>
+
+  
+
 <body>
-    <h1 class="title">VAGASPARK</h1>
+  
+  <nav class=" teste">
+    <a href="index.html"><button><i class="fa-solid fa-arrow-left"></i> Voltar</button></a>
+  </nav>
+    
+  
+<div class="caixa">
+
+  <div class="ti-img">
+  <div><img src="img/logo.png" alt="" srcset=""></div>
+    <div><h1 class="title">VAGASPARK</h1></div>
+    
+
+    </div>
     <div class="container" id="container">
       <div class="form-container sign-up-container">   
 
@@ -26,7 +45,7 @@ session_start();
           <input type="password" id="senha" name="senha" placeholder="Senha" />
           <input type="text" id="cpf" name="cpf" placeholder="CPF/CNPJ" />
           <input type="text" id="placa" name="placa" placeholder="Placa do veiculo" />
-         <button type="submit" onclick="validarCPF(),validateFormEmail(), validateFormSenha()" class="criarbot">Criar</button>
+         <button type="submit" onclick="validarCPF(),validateFormEmail(), validateFormSenha()" id="criarbtn" class="criarbot">Criar</button>
         </form>
         <?php if (isset($_SESSION["inserido_com_sucesso"]) && $_SESSION["inserido_com_sucesso"]): ?>
 		<h1>Dados cadastrados com sucesso!</h1>
@@ -46,8 +65,8 @@ session_start();
           
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Senha" />
-          <a href="#">Esqueceu sua senha?</a>
-          <button type="button" class="criarbot">Entrar</button>
+          <a href="recuperacaoSenha.html" target="_blank">Esqueceu sua senha?</a>
+          <button type="button" class="criarbot" onclick="validateFormEmail(), validateFormSenha()">Entrar</button>
         </form>
       </div>
       <div class="overlay-container">
@@ -59,12 +78,14 @@ session_start();
           </div>
           <div class="overlay-panel overlay-right">
             <h1>Vamos ser amigos!</h1>
-            <p>Introduza os seus dados pessoais e comece a viajar conosco</p>
+            <p>Preencha com os seus dados e comece a viajar conosco!</p>
             <button class="ghost" id="signUp" class="criarbot">Cadastrar</button>
           </div>
         </div>
       </div>
     </div>
+
+</div>
     
   
     <script src="js/CadastroLogin.js"></script>
