@@ -678,7 +678,8 @@ html{
           line-height:60px
         }
         .section-223-copy{
-          margin-bottom:47px
+          margin-bottom:200px;
+          margin-top:200px;
         }
         .topo-copy{
           height:100px;
@@ -708,7 +709,7 @@ html{
 .heading-47-copy-copy-copy{
     font-family:Oswald,sans-serif;
     color:#fff;
-    font-size:65px;
+    font-size:61px;
     line-height:70px
 }
 .heading-41-copy-copy{
@@ -719,30 +720,33 @@ html{
   line-height:40px;
   text-align:left}
 .heading-47-copy-copy{
-    max-width:400px;
+    max-width:40px;
     margin-right:-77px;
     font-family:Aprova,sans-serif;
+    
     color:#111;
-    font-size:80px;
+    font-size:100px;
     line-height:85px
 }
 /* sessao para empresas */
 .hero-sessao{
+  zoom: 105%;
   padding-top:100px;
   padding-bottom:100px;
   background-color:#22e299
 }
 .hero-sessao{overflow:hidden;
-  padding-top:38px;
-  padding-bottom:61px
+  padding-top:200px;
+  padding-bottom:200px
 }
 /* fim */
 /* sessao solução  */
 .segunda-dobra-01{
+  zoom: 110%;
     position:relative;
-    margin-top:0;
+    margin-top:1px;
     margin-bottom:1px;
-    padding:80px 30px;
+    padding:150px 30px;
     border-bottom:1px solid #e4ebf3;
     background-color:#d3c67f;
   } 
@@ -760,10 +764,11 @@ html{
 /* fim */
  /* sessao Nossa Misssao */
 .segunda-dobra-03{
+  zoom: 105%;
     position:relative;
     margin-top:0;
     margin-bottom:1px;
-    padding:80px 30px;
+    padding:100px 30px 40px 0;
     border-bottom:1px solid #e4ebf3;
     background-color:#c0868e;
 }
@@ -957,7 +962,8 @@ html{
     flex-direction:column}
     
 .bold-text-21,.paragraph-28-copy{
-    width:100%
+    width:100%;
+    
 }
 
 .heading-47-copy-copy{
