@@ -1,7 +1,3 @@
-*{
-    font-family: "Poppins"
-}
-
 body{
     margin: 0;
     font-family: "Poppins";
@@ -104,7 +100,7 @@ h2{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #FFC857;
+    background-color: rgb(237, 197, 90);
     z-index: 100;
     transition: 0,4s;
 }
@@ -149,7 +145,7 @@ h2{
 }
 
 .nav__link:hover{
-    color: rgb(0, 134, 67);
+    color: rgb(171, 223, 240);
 }
 
 i.nav__icon{
@@ -240,108 +236,14 @@ i.nav__icon{
 /*fim nav */
 
 /* INFO PERFIL */
+.form{
+    align-items:center;
+    display
 
+}
  .wrapper{
     display: grid;
     grid-column: 1;
-    width: 80%;
+    width: 35%;
     align-items:center;
  }
-
- .form-info{
-    padding: 30px 5px 5px 5px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
- }
-
-
- .label-info{
-    font-size: 18px;
- }
-
- .info-conta{
-    border: none;
-    border-bottom: 2px solid #bebebe;
-    padding-bottom: 5px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    outline: none;
-    align-items: end;
-    display: block;
-    font-size: 15px;
-    color: #353535;
- }
- 
-
- /*botão */
- .btn-class{
-    align-items: center;
-    justify-content: center;
-    display:flex;
-    flex-direction: column;
-    
- }
-
-.btn-config-advance{
-    font-size: 1em;
-    width: 25%;
-    padding: 0.5em;
-    background-color:#ffffff;
-    border-radius: 5px;
-    border: 2px solid #ABABAB;
-    margin-top: 30px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    color: inherit;
-    text-decoration: none;
-}
-.btn-config-advance:hover{
-    background-color: #FFCC49;
-    transition-duration: 0.4s;
-    transform: scale(1.1);
-
-}
-.icon-seta{
-    width: 10%;
-    
-}
-.icon-config{
-    width: 8%;
-    
-}
-
-/* VEICULOS */
-
-.section-veiculos{
-    display: grid;
-    justify-content: space-around;
-    row-gap: 50px;
-    margin-top: 20px;
-    
-    
-}
-
-.veiculos{
-    padding: 30px 30px 30px 30px;
-    background-color: #dcf5da;
-    border-radius: 30px;
-    align-items: center;
-    grid-column:unset;
-    justify-items: center;
-  
-
-}
-.veiculos-patins{
- width: 15%;
-}
-
-.grid-container {
-    display: grid;
-    column-gap: 50px;
-  }

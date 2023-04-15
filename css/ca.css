@@ -5,15 +5,7 @@
 }
 
 body {
-  background:#0dece4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
-  height: 100vh;
-  margin: -20px 0 50px;
-  font-size: 17px
+  background:white;
 }
 
 h1 {
@@ -21,11 +13,19 @@ h1 {
   margin: 0;
 }
 
-.title{
-    margin-bottom: 1.5%;
-    color: #e84f12;
-     font-size: 50px;
+.caixa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+  font-size: 17px;
+  overflow: hidden;
 }
+
+
 
 h2 {
   text-align: center;
@@ -33,14 +33,14 @@ h2 {
 
 p {
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 20px;
   letter-spacing: 0.5px;
   margin: 20px 0 30px;
 }
 
 span {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 a {
@@ -52,8 +52,8 @@ a {
 
 button {
   border-radius: 20px;
-  border: 1px solid #FF4B2B;
-  background-color: #FF4B2B;
+  border: 1px solid #038a87;
+  background-color: #038a87;
   color: #FFFFFF;
   font-size: 12px;
   font-weight: bold;
@@ -93,6 +93,7 @@ input {
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
+  border-radius: 9px;
 }
 
 .container {
@@ -166,9 +167,7 @@ input {
 }
 
 .overlay {
-  background: #FF416C;
-  background: -webkit-linear-gradient(to right, #ff0000, #4000fe);
-  background: linear-gradient(to right, #ee4006, #65d800);
+  background: linear-gradient(to right,#C5283D,#038a87, #f38d07 );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -238,7 +237,27 @@ input {
   cursor: pointer;
 }
 .criarbot:hover{
-  background-color: #eb2f0e;
+  background-color: #038a87;
   box-shadow: 3px 3px 4px #2d2c2c;
   transition: 0.7s;
+}
+
+img{
+width: 90px;
+margin-right: 2%;
+}
+
+.ti-img{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 1%;
+}
+
+.title{
+    color: #038a87;
+     font-size: 35px;
+     margin-left: 5%;
 }
