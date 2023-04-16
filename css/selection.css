@@ -716,7 +716,7 @@ html{
   width:300px;margin-top:-1px;
   padding-left:7px;
   font-family:Aprova,sans-serif;color:#111;
-  font-size:30px;
+  font-size:20px;
   line-height:40px;
   text-align:left}
 .heading-47-copy-copy{
@@ -725,12 +725,12 @@ html{
     font-family:Aprova,sans-serif;
     
     color:#111;
-    font-size:100px;
-    line-height:85px
+    font-size:80px;
+    line-height:75px
 }
 /* sessao para empresas */
 .hero-sessao{
-  zoom: 105%;
+  
   padding-top:100px;
   padding-bottom:100px;
   background-color:#22e299
@@ -742,7 +742,7 @@ html{
 /* fim */
 /* sessao solução  */
 .segunda-dobra-01{
-  zoom: 110%;
+  
     position:relative;
     margin-top:1px;
     margin-bottom:1px;
@@ -764,7 +764,7 @@ html{
 /* fim */
  /* sessao Nossa Misssao */
 .segunda-dobra-03{
-  zoom: 105%;
+  
     position:relative;
     margin-top:0;
     margin-bottom:1px;
@@ -966,10 +966,6 @@ html{
     
 }
 
-.heading-47-copy-copy{
-    width:100%;
-    max-width:100%
-}
 
 .bold-text-35{
     width:79%}
