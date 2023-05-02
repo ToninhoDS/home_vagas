@@ -134,7 +134,7 @@
                     <a class="nav-link tablinks" onclick="openPage(event, 'Con')" href="javascript:void(0);"><i class="far fa-address-book"></i>Para Celular</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link tablinks" href="http://localhost/dashboard_tcc/login_parceiro.php"><i class="fa fa-user-plus" aria-hidden="true"></i>Nossos Parceiros</a>
+                  <a class="nav-link tablinks" href="http://localhost/dashboard_tcc/vagas_park/login_parceiro.php"><i class="fa fa-user-plus" aria-hidden="true"></i>Nossos Parceiros</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link tablinks" href="login.php"><i></i>Login</a>
