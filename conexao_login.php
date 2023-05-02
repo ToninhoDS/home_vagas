@@ -2,7 +2,7 @@
 $host = "localhost:3306";
 $dbname = "db_tcc_estacionamento";
 $user = "root";
-$password = "";
+$password = "root";
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
