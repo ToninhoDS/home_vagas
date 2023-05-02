@@ -23,7 +23,7 @@ session_start();
 <body>
   
   <nav class=" teste">
-    <a href="index.html"><button><i class="fa-solid fa-arrow-left"></i> Voltar</button></a>
+    <a href="index.php"><button><i class="fa-solid fa-arrow-left"></i> Voltar</button></a>
   </nav>
     
   
@@ -55,7 +55,7 @@ session_start();
 	<?php endif; ?>
 
 	<?php
-	// Limpar a variável de sessão para que a mensagem não seja exibida novamente na próxima vez que a página for carregada
+	
 	unset($_SESSION["inserido_com_sucesso"]);
 	?>
       </div>
@@ -66,7 +66,7 @@ session_start();
           
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Senha" />
-          <a href="recuperacaoSenha.html" target="_blank">Esqueceu sua senha?</a>
+          <a href="recuperacaoSenha.php" target="_blank">Esqueceu sua senha?</a>
           <button type="button" class="criarbot" onclick="validateFormEmail(), validateFormSenha()">Entrar</button>
         </form>
       </div>

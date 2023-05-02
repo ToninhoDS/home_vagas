@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/animacao.css"/>
     <link rel="stylesheet" type="text/css" href="css/header.css"/>
     <link rel="icon" href="img/vagas.ico" type="image/png"/>
+    <link rel="stylesheet" href="css/perfil-usuario.css">
+    <link rel="stylesheet" href="css/faq.css">
+
+    <script src="js/perfil-usuario.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
@@ -28,6 +32,89 @@
       <nav class="navbar navbar-expand-custom navbar-mainbg">
         <a class="logo"><img src="img/logo.png"></a>
         <a class="navbar-brand navbar-logo" href="#"><font color="white"> VAGASPARK </font></a>
+ 
+        <?php 
+// Conexão com o banco de dados
+//$servername = "localhost";
+//$username = "root";
+//$password = "";
+//$dbname = "db_tcc_estacionamento";
+
+//$conn = new mysqli($servername, $username, $password, $dbname);
+
+//if ($conn->connect_error) {
+ // die("Falha na conexão: " . $conn->connect_error);
+//}
+
+// Atualizar registro
+//if(isset($_POST['submit'])) {
+  //$cd_cliente = $_POST['id'];
+//  $nome = $_POST['nome'];
+ // $email = $_POST['email'];
+ // $telefone = $_POST['telefone'];
+ // $endereco = $_POST['endereco'];
+
+  //$sql = "UPDATE tb_cliente SET nome='$nome', email='$email' WHERE id='$cd_cliente'";
+
+  //if ($conn->query($sql) === TRUE) {
+  //  echo "Registro atualizado com sucesso!";
+  //} else {
+  //  echo "Erro ao atualizar registro: " . $conn->error;
+ // }
+//}
+
+// Selecionar registro para edição
+//if(isset($_GET['id'])) {
+  //$cd_cliente = $_GET['id'];
+  //$sql = "SELECT * FROM tb_cliente WHERE id='$cd_cliente'";
+  //$result = $conn->query($sql);
+
+  //if ($result->num_rows > 0) {
+   // $row = $result->fetch_assoc();
+    //$nome = $row['nome'];
+    //$email = $row['email'];
+   // $telefone = $row['telefone'];
+   // $endereco = $row['endereco'];
+  //} else {
+    //echo "Registro não encontrado";
+//  }
+//}
+
+// Exibir registros
+//$sql = "SELECT * FROM tb_cliente";
+//$result = $conn->query($sql);
+
+//if ($result->num_rows > 0) {
+  //echo "<table>";
+  //echo "<tr><th>ID</th><th>Nome</th><th>Email</th><th>Telefone</th><th>Endereço</th><th>Ação</th></tr>";
+  //while($row = $result->fetch_assoc()) {
+    //echo "<tr><td>".$row['id']."</td><td>".$row['nome']."</td><td>".$row['email']."</td><td><a href='edit.php?id=".$row['id']."'>Editar</a></td></tr>";
+  //}
+  //echo "</table>";
+//} else {
+ // echo "Nenhum registro encontrado";
+//}
+
+//$conn->close();
+?>
+<!-- 
+
+<form method="POST" action="">
+  <input type="hidden" name="id" value="<?php echo $cd_cliente; ?>">
+  <label>Nome:</label>
+  <input type="text" name="nome" value="<?php echo $nome; ?>"><br>
+  <label>Email:</label>
+  <input type="text" name="email" value="<?php echo $email; ?>"><br>
+  <label>Telefone:</label>
+  <input type="text" name="telefone" value="<?php echo $telefone; ?>"><br>
+  <label>Endereço:</label>
+ 
+  <input type="submit" name="submit" value="Salvar">
+</form>
+-->
+   
+
+
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
         </button>
@@ -239,8 +326,57 @@
 <section id="Con" class="tabcontent">
 
 
-
 </section>
+
+
+<div id="pai-faq">
+<div class="duvida-faq">
+<h1>DÚVIDAS COM O  VAGASPARK</h1>
+<div class="p-faq">
+<p>
+Conta para a gente! Estamos focados em atendê-lo da melhor maneira possível através dos nossos canais digitais, por isso, separamos aqui as perguntas mais frequentes para te ajudar. Caso ainda permaneça com alguma dúvida, é só clicar no botão “Precisa de ajuda?”.
+</p>
+</div>
+</div>
+
+
+<div class="faq-container">
+        <h1 class="faq-title">Perguntas Frequentes</h1>
+        <ul class="faq-list">
+          <li class="faq-item">
+            <div class="faq-question">
+              <h3 class="faq-question-title">Planos e preços</h3>
+              <div class="faq-arrow"></div>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-text">
+              Oferecemos diferentes planos e preços para atender às suas necessidades de estacionamento. Desde planos mensais até tickets avulsos, escolha a melhor opção para você e pague com segurança pelo nosso aplicativo ou pelo site.
+              </p>
+            </div>
+          </li>
+          <li class="faq-item">
+            <div class="faq-question">
+              <h3 class="faq-question-title">Serviços Vagaspark </h3>
+              <div class="faq-arrow"></div>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-text">O sistema Vagaspark é a forma mais fácil e rápida de comprar o seu ticket de estacionamento. Disponível para Android e iOS, ele permite que você encontre a vaga mais próxima, compre o seu ticket e renove pelo tempo que precisar, tudo sem precisar se deslocar até o parquímetro.</p>
+            </div>
+          </li>
+          <li class="faq-item">
+            <div class="faq-question">
+              <h3 class="faq-question-title">Como funciona o sistema Vagaspark</h3>
+              <div class="faq-arrow"></div>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-text">O sistema Vagaspark funciona por meio de parquímetros que estão distribuídos nas principais vias da cidade. Com o seu ticket, você pode estacionar por um período de tempo determinado, que varia de acordo com a zona onde está estacionado. Para renovar o seu ticket, basta utilizar o nosso aplicativo ou se dirigir a um dos parquímetros disponíveis.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+
 
 
   <!-- fooder -->
@@ -365,6 +501,7 @@
   <script src="js/script.js"></script>
   <script src="js/scriptt.js"></script>
   <script src="js/selection.js"></script>
+  <script src="js/faq.js"></script>
 
 </body>
 </html>
